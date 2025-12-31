@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+
+    <style>
+        /* Page background */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #22c55e, #15803d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Signup box */
+        .auth-container {
+            background-color: #ffffff;
+            width: 400px;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        /* Heading */
+        .auth-container h2 {
+            margin-bottom: 25px;
+            color: #166534;
+            font-size: 26px;
+        }
+
+        /* Input fields */
+        .auth-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            border: 1.5px solid #d1fae5;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .auth-container input:focus {
+            border-color: #22c55e;
+            box-shadow: 0 0 6px rgba(34, 197, 94, 0.4);
+        }
+
+        /* Signup button */
+        .auth-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #22c55e;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .auth-container button:hover {
+            background-color: #16a34a;
+            box-shadow: 0 8px 18px rgba(34, 197, 94, 0.6);
+        }
+
+        /* Text below button */
+        .auth-container p {
+            margin-top: 18px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        /* Link */
+        .auth-container a {
+            color: #16a34a;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .auth-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="auth-container">
+    <h2>Create Account</h2>
+
+    <input type="text" id="signupName" placeholder="Full Name">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+
+    <button onclick="signup()">Sign Up</button>
+
+    <p>Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
