@@ -24,30 +24,26 @@ body {
 
 .floating-emojis span {
   position: absolute;
-  top: -60px;
-  font-size: 42px;
-  animation: floatDown 18s linear infinite;
+  top: -50px;
+  font-size: 36px;
   opacity: 0;
+  animation-name: floatDown;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.floating-emojis span:nth-child(1) { left: 8%; animation-delay: 0s; }
-.floating-emojis span:nth-child(2) { left: 25%; animation-delay: 3s; }
-.floating-emojis span:nth-child(3) { left: 45%; animation-delay: 6s; }
-.floating-emojis span:nth-child(4) { left: 65%; animation-delay: 9s; }
-.floating-emojis span:nth-child(5) { left: 80%; animation-delay: 12s; }
-.floating-emojis span:nth-child(6) { left: 92%; animation-delay: 15s; }
-
+/* Keyframes for falling */
 @keyframes floatDown {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(0deg);
     opacity: 0;
   }
   10% {
-    opacity: 0.35;
+    opacity: 0.4;
   }
   100% {
-    transform: translateY(120vh);
-    opacity: 0.35;
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0.4;
   }
 }
 
