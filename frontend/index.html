@@ -65,7 +65,7 @@
   <link href="css/components/sections.css" rel="stylesheet" />
   <link href="css/components/scrollBar.css" rel="stylesheet" />
   <link href="css/components/modal.css" rel="stylesheet" />
-  <link href="css/components/crisis-alert.css" rel="stylesheet" />
+
   <link href="css/components/eco-assistant.css" rel="stylesheet" />
   <link href="css/components/responsive-images.css" rel="stylesheet" />
   <link href="css/components/image-loading.css" rel="stylesheet" />
@@ -281,16 +281,13 @@
     </div>
   </div>
 
-  <!-- Fire Regime Crisis Alert -->
-  <div class="crisis-alert-banner" id="crisisAlert" style="display: none;">
-    <div class="crisis-alert-content">
-      <div class="crisis-icon">
-        <i class="fas fa-exclamation-triangle"></i>
-      </div>
-      <div class="crisis-text">
-        <span class="crisis-level">🔥 LEVEL 3 CRISIS</span>
-        <span class="crisis-title">Fire Regime Shifts Causing Mass Wildlife Adaptation Failure</span>
-        <span class="crisis-action">400% increase in fire frequency - Immediate conservation action required</span>
+
+
+  <!-- Permafrost Methane Crisis Alert Banner - Level 3 Emergency (#3128) -->
+  <div class="noise-crisis-alert-banner" id="permafrost-crisis-alert-banner" style="display: none;">
+    <div class="noise-crisis-alert-content">
+      <div class="noise-crisis-icon">
+        <i class="fas fa-snowflake noise-pulse"></i>
       </div>
       <div class="crisis-actions">
         <a class="crisis-btn" href="..//frontend/pages/environment/fire-regime-shifts.html">
@@ -305,13 +302,13 @@
             Arctic warming is accelerating - urgent intervention needed before a Blue Ocean Event
           </span>
       </div>
-      <div class="crisis-actions">
-        <a class="crisis-btn" href="pages/environment/polar-albedo-feedback-loop.html">
-          <i class="fas fa-snowflake">
-          </i>
+      <div class="noise-crisis-actions">
+        <a class="indigenous-crisis-btn" href="pages/environment/permafrost-methane-crisis.html">
+          <i class="fas fa-eye"></i>
           View Crisis Details
         </a>
-        <button aria-label="Close crisis alert" class="crisis-close" onclick="closeCrisisAlert()">
+        <button aria-label="Close crisis alert" class="noise-crisis-close"
+          onclick="document.getElementById('permafrost-crisis-alert-banner').style.display='none'">
           <i class="fas fa-times"></i>
         </button>
       </div>

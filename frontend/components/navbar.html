@@ -39,7 +39,7 @@
         </button>
         <ul class="dropdown">
           <li><a href="pages/community-action-hub.html">🌍 Action Hub</a></li>
-          <li><a href="pages/water-wastage-tracker.html">💧 Water Wastage Tracker</a></li>
+          <li><a href="components/pages/water-wastage-tracker.html">💧 Water Wastage Tracker</a></li>
           <li><a href="pages/food-waste-tracker.html">🥗 Food Waste Tracker</a></li>
           <li><a href="pages/animal-safety/pet-adoption.html">🐶 Adopt Pet</a></li>
           <li><a href="pages/animal-safety/lost-found-pets.html">😃 Lost & Found</a></li>
@@ -108,4 +108,7 @@
     </div>
 
   </div>
+  <script>
+    document.querySelector('a[href="pages/water-wastage-tracker.html"]')?.addEventListener('click', e => e.stopPropagation());
+  </script>
 </nav>
